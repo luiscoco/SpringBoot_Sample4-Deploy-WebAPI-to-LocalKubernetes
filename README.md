@@ -32,8 +32,6 @@ Se the **Java version 21**
 
 ![image](https://github.com/luiscoco/SpringBoot_Sample4-Deploy-WebAPI-to-LocalKubernetes/assets/32194879/69f92e20-d5f6-4912-b388-e7dbc3bb08b6)
 
-
-
 ## 2. Add the Kubernetes manifest files (deployment.yml and service.yml files) to the SpringBoot WebAPI in VSCode
 
 **deployment.yml**
@@ -140,11 +138,19 @@ public class HelloController {
 }
 ```
 
+## 5. How build the Docker image and run it
 
+To build the Docker image execute this command:
 
+```
+docker build -t demoapi .
+```
 
+To run the Web API docker image run this command:
 
-## 5. 
+```
+docker run -p 8080:8080 demoapi
+```
 
 
 
