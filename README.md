@@ -77,12 +77,31 @@ spec:
       targetPort: 8080  # The port the container accepts traffic on
 ```
 
-## 3. Add the project dependencies
+## 3. Install the project dependencies 
 
+Include the following libraries in the pom.xml file:
 
+- spring-boot-starter-actuator
+- spring-boot-starter-web
+- spring-boot-starter-test
 
-
-
+```
+...
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-test</artifactId>
+   <scope>test</scope>
+</dependency>
+...
+```
 
 ## 4. Add the SpringBoot WebAPI source code
 
