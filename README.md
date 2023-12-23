@@ -39,13 +39,42 @@ Se the **Java version 21**
 **deployment.yml**
 
 ```
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demoapi-deployment
+spec:
+  replicas: 2  # The number of Pods to run
+  selector:
+    matchLabels:
+      app: demoapi
+  template:
+    metadata:
+      labels:
+        app: demoapi
+    spec:
+      containers:
+        - name: demoapi
+          image: <your-docker-image>  # Replace with your Docker image, e.g., "username/demoapi:latest"
+          ports:
+            - containerPort: 8080
 ```
 
 **service.yml**
 
 ```
-
+apiVersion: v1
+kind: Service
+metadata:
+  name: demoapi-service
+spec:
+  type: LoadBalancer  # Exposes the service externally using a load balancer
+  selector:
+    app: demoapi
+  ports:
+    - protocol: TCP
+      port: 80  # The port the load balancer listens on
+      targetPort: 8080  # The port the container accepts traffic on
 ```
 
 ## 3. Add the project dependencies
