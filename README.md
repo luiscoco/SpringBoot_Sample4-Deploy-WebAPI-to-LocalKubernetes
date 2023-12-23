@@ -30,6 +30,10 @@ Specify the packing type **Jar**
 
 ![image](https://github.com/luiscoco/SpringBoot_Sample4-Deploy-WebAPI-to-LocalKubernetes/assets/32194879/c220c59e-29b8-4dba-b5fe-7660102ff89a)
 
+Se the **Java version 21**
+
+![image](https://github.com/luiscoco/SpringBoot_Sample4-Deploy-WebAPI-to-LocalKubernetes/assets/32194879/69f92e20-d5f6-4912-b388-e7dbc3bb08b6)
+
 
 
 ## 2. Add the Kubernetes manifest files (deployment.yml and service.yml files) to the SpringBoot WebAPI in VSCode
