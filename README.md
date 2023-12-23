@@ -1,5 +1,3 @@
-![image](https://github.com/luiscoco/SpringBoot_Sample4-Deploy-WebAPI-to-LocalKubernetes/assets/32194879/3c884a30-41c1-4e2d-9576-488201e997d2)# How to deploy SpringBoot WebAPI to Local Kubernetes
-
 ## 1. Create a SpringBoot WebAPI with VSCode
 
 See this rep: https://github.com/luiscoco/SpringBoot_Sample1-created-with-VSCode
