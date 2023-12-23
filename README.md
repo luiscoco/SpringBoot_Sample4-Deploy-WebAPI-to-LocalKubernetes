@@ -105,7 +105,40 @@ Include the following libraries in the pom.xml file:
 
 ## 4. Add the SpringBoot WebAPI source code
 
+**DemoapiApplication.java**
 
+```java
+package com.example.demoapi;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoapiApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoapiApplication.class, args);
+    }
+}
+```
+
+**HelloController.java**
+
+http://localhost:8080/hello
+
+```java
+package com.example.demoapi.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello, World!";
+    }
+}
+```
 
 
 
