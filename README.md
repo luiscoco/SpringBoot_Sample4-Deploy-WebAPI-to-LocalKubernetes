@@ -175,6 +175,6 @@ kubectl apply -f service.yml
 
 ![image](https://github.com/luiscoco/SpringBoot_Sample4-Deploy-WebAPI-to-LocalKubernetes/assets/32194879/0fc840d6-181a-40f4-be88-9b9a1889bcfb)
 
-Access to the WebAPI endpoint:
+Access to the WebAPI endpoint: http://localhost/hello
 
 ![image](https://github.com/luiscoco/SpringBoot_Sample4-Deploy-WebAPI-to-LocalKubernetes/assets/32194879/2c6e554c-8dab-4c99-adb2-9ecfc82b108b)
