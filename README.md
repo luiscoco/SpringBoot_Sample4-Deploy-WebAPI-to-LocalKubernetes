@@ -1,4 +1,8 @@
-## 1. Create a SpringBoot WebAPI with VSCode
+## 1. Run Docker Desktop and enable Kubernetes
+
+![image](https://github.com/luiscoco/SpringBoot_Sample4-Deploy-WebAPI-to-LocalKubernetes/assets/32194879/75fad4f1-82dc-4edf-93b0-62d3547a2d23)
+
+## 2. Create a SpringBoot WebAPI with VSCode
 
 See this rep: https://github.com/luiscoco/SpringBoot_Sample1-created-with-VSCode
 
@@ -32,7 +36,7 @@ Se the **Java version 21**
 
 ![image](https://github.com/luiscoco/SpringBoot_Sample4-Deploy-WebAPI-to-LocalKubernetes/assets/32194879/69f92e20-d5f6-4912-b388-e7dbc3bb08b6)
 
-## 2. Add the Kubernetes manifest files (deployment.yml and service.yml files) to the SpringBoot WebAPI in VSCode
+## 3. Add the Kubernetes manifest files (deployment.yml and service.yml files) to the SpringBoot WebAPI in VSCode
 
 **deployment.yml**
 
@@ -74,7 +78,7 @@ spec:
     app: demoapi
 ```
 
-## 3. Install the project dependencies 
+## 4. Install the project dependencies 
 
 Include the following libraries in the pom.xml file:
 
@@ -100,7 +104,7 @@ Include the following libraries in the pom.xml file:
 ...
 ```
 
-## 4. Add the SpringBoot WebAPI source code
+## 5. Add the SpringBoot WebAPI source code
 
 **DemoapiApplication.java**
 
@@ -137,7 +141,7 @@ public class HelloController {
 }
 ```
 
-## 5. How build the Docker image and run it
+## 6. How build the Docker image and run it
 
 To build the Docker image execute this command:
 
@@ -157,7 +161,7 @@ To run a Docker image execute the command:
 docker run -p 8080:8080 luiscoco/demoapi:latest
 ```
 
-## 6. 
+## 7. 
 
 
 
