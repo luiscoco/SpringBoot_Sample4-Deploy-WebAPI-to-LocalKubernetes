@@ -161,11 +161,14 @@ To run a Docker image execute the command:
 docker run -p 8080:8080 luiscoco/demoapi:latest
 ```
 
-## 7. 
+## 7. Deploy manifest Kubernetes
 
+Execute the following commands to deploy the Kubernetes:
 
+```
+kubectl apply -f deployment.yml
+```
 
-
-
-
-
+```
+kubectl apply -f service.yml
+```
