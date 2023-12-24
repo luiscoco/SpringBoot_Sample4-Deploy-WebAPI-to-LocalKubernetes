@@ -42,7 +42,7 @@ kind: Deployment
 metadata:
   name: demoapi-deployment
 spec:
-  replicas: 2  # The number of Pods to run
+  replicas: 2
   selector:
     matchLabels:
       app: demoapi
@@ -52,10 +52,10 @@ spec:
         app: demoapi
     spec:
       containers:
-        - name: demoapi
-          image: <your-docker-image>  # Replace with your Docker image, e.g., "username/demoapi:latest"
-          ports:
-            - containerPort: 8080
+      - name: demoapi
+        image: luiscoco/demoapi:latest
+        ports:
+        - containerPort: 8080
 ```
 
 **service.yml**
@@ -66,13 +66,12 @@ kind: Service
 metadata:
   name: demoapi-service
 spec:
-  type: LoadBalancer  # Exposes the service externally using a load balancer
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
   selector:
     app: demoapi
-  ports:
-    - protocol: TCP
-      port: 80  # The port the load balancer listens on
-      targetPort: 8080  # The port the container accepts traffic on
 ```
 
 ## 3. Install the project dependencies 
