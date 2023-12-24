@@ -154,7 +154,7 @@ docker build -t luiscoco/demoapi:latest .
 To push the Web API docker image run this command:
 
 ```
-docker build -t luiscoco/demoapi:latest .
+docker push luiscoco/demoapi:latest
 ```
 
 To run a Docker image execute the command:
