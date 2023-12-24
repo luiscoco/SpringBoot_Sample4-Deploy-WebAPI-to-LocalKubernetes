@@ -142,14 +142,23 @@ public class HelloController {
 To build the Docker image execute this command:
 
 ```
-docker build -t demoapi .
+docker build -t luiscoco/demoapi:latest .
 ```
 
-To run the Web API docker image run this command:
+To push the Web API docker image run this command:
 
 ```
-docker run -p 8080:8080 demoapi
+docker build -t luiscoco/demoapi:latest .
 ```
+
+To run a Docker image execute the command:
+
+```
+docker run -p 8080:8080 luiscoco/demoapi:latest
+```
+
+## 6. 
+
 
 
 
